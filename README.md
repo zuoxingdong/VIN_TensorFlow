@@ -1,6 +1,6 @@
 # VIN: [Value Iteration Networks](https://arxiv.org/abs/1602.02867)
 
-This is an implementation of Value Iteration Networks (VIN) in TensorFlow to reproduce the results.([PyTorch version](https://github.com/zuoxingdong/VIN_PyTorch))
+This is an implementation of Value Iteration Networks (VIN) in TensorFlow to reproduce the results.([PyTorch version](https://github.com/zuoxingdong/VIN_PyTorch_Visdom))
 
 ![Architecture of Value Iteration Network](imgs/vin.png)
 
@@ -80,7 +80,7 @@ python run.py --datafile data/gridworld_28x28.npz --imsize 28 --lr 0.003 --epoch
 Test Accuracy | 8x8 | 16x16 | 28x28
 -- | -- | -- | --
 TensorFlow | 99.03% | 90.2% | 82%
-[PyTorch](https://github.com/zuoxingdong/VIN_PyTorch) | 99.16% | 92.44% | 92.44% 
+[PyTorch](https://github.com/zuoxingdong/VIN_PyTorch_Visdom) | 99.16% | 92.44% | 92.44% 
 
 
 ### Speed with GPU
@@ -88,7 +88,7 @@ TensorFlow | 99.03% | 90.2% | 82%
 Speed per epoch | 8x8 | 16x16 | 28x28
 -- | -- | -- | --
 TensorFlow | 4s | 25s | 165s
-[PyTorch](https://github.com/zuoxingdong/VIN_PyTorch) | 3s | 15s | 100s 
+[PyTorch](https://github.com/zuoxingdong/VIN_PyTorch_Visdom) | 3s | 15s | 100s 
 
 
                     
