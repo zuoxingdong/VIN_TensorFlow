@@ -14,10 +14,11 @@ This is an implementation of Value Iteration Networks (VIN) in TensorFlow to rep
 ## Learned Reward Image and Its Value Images for each VI Iteration
 
 Visualization | Grid world | Reward Image | Value Images
-- | -- | --- | ---
+-- | -- | --- | ---
 8x8 | <img src="imgs/grid_8x8.jpeg" width="150"> | <img src="imgs/reward_8x8.png" width="300"> | <img src="imgs/value_function_8x8.gif" width="300">
 16x16 | <img src="imgs/grid_16x16.jpeg" width="150"> | <img src="imgs/reward_16x16.png" width="300"> | <img src="imgs/value_function_16x16.gif" width="300">
 28x28 | <img src="imgs/grid_28x28.jpeg" width="150"> | <img src="imgs/reward_28x28.png" width="300"> | <img src="imgs/value_function_28x28.gif" width="300">
+
 ## Dependencies
 
 This repository requires following packages:
