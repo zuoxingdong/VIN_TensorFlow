@@ -15,12 +15,9 @@ This is an implementation of Value Iteration Networks (VIN) in TensorFlow to rep
 
  | Grid world | Reward Image | Value Images
 -- | -- | --
-8x8 | ![imgs8x8_grid](imgs/grid_8x8.jpeg) |   <img src="imgs/reward_8x8.png" width="50"> | ![imgs8x8_value](imgs/value_function_8x8.gif)
-16x16 | ![imgs16x16_grid](imgs/grid_16x16.jpeg) |  ![imgs16x16_reward](imgs/reward_16x16.png) | ![imgs16x16_value](imgs/value_function_16x16.gif)
-28x28 | ![imgs28x28_grid](imgs/grid_28x28.jpeg) |  ![imgs28x28_reward](imgs/reward_28x28.png) | 
-
-![imgs28x28_value](imgs/value_function_28x28.gif)
-
+8x8 | <img src="imgs/grid_8x8.jpeg" width="256"> | <img src="imgs/reward_8x8.png" width="256"> | <img src="imgs/value_function_8x8.gif" width="256">
+16x16 | <img src="imgs/grid_16x16.jpeg" width="256"> | <img src="imgs/reward_16x16.png" width="256"> | <img src="imgs/value_function_16x16.gif" width="256">
+28x28 | <img src="imgs/grid_28x28.jpeg" width="256"> | <img src="imgs/reward_28x28.png" width="256"> | <img src="imgs/value_function_28x28.gif" width="256">
 ## Dependencies
 
 This repository requires following packages:
