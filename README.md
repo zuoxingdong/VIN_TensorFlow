@@ -14,7 +14,7 @@ This is an implementation of Value Iteration Networks (VIN) in TensorFlow to rep
 ## Learned Reward Image and Its Value Images for each VI Iteration
 
  | Grid world | Reward Image | Value Images
--- | --- | ---
+-- | -- | --
 8x8 | ![imgs8x8_grid](imgs/grid_8x8.jpeg "1") |  ![imgs8x8_reward](imgs/reward_8x8.png) | ![imgs8x8_reward](imgs/value_function_8x8.gif)
 16x16 | ![imgs16x16_grid](imgs/grid_16x16.jpeg "1") |  ![imgs16x16_reward](imgs/reward_16x16.png) | ![imgs16x16_reward](imgs/value_function_16x16.gif)
 28x28 | ![imgs28x28_grid](imgs/grid_28x28.jpeg "1") |  ![imgs28x28_reward](imgs/reward_28x28.png) | ![imgs28x28_reward](imgs/value_function_28x28.gif)
@@ -30,7 +30,7 @@ This repository requires following packages:
 
 ## Datasets
 
-Each data sample consists of $(x, y)$ coordinates of current state in grid world, followed by an obstacle image and a goal image. 
+Each data sample consists of (x, y) coordinates of current state in grid world, followed by an obstacle image and a goal image. 
 
 Dataset size | 8x8 | 16x16 | 28x28
 -- | -- | -- | --
@@ -95,11 +95,11 @@ TensorFlow | 4s | 25s | 165s
                     
 ## Frequently Asked Questions
 
-- **Q: ** How to get reward image `\bar{R}` from observation ?
+- **Q: ** How to get reward image from observation ?
     - **A: ** Observation image has 2 channels. First channel is obstacle image (0: free, 1: obstacle). Second channel is goal image (0: free, 10: goal). For example, in 8x8 grid world, the shape of an input tensor with batch size 128 is [128, 2, 8, 8]. Then it is fed into a convolutional layer with [3, 3] filter and 150 feature maps, followed by another convolutional layer with [3, 3] filter and 1 feature map. The shape of the output tensor is [128, 1, 8, 8]. This is the reward image. 
 
-- **Q: ** What is exactly transition model $\bar{P}$, and how to obtain value image by VI-module from reward image ?
-    - **A: ** Let us assume batch size is 128 under 8x8 grid world. Once we obtain the reward image with shape [128, 1, 8, 8], we do convolutional layer for q layers in VI module. The [3, 3] filter represents the transition probabilities $\bar{P}$. There is a set of 10 filters, each for generating a feature map in q layers. Each feature map corresponds to an "action". Note that this is larger than real available actions which is only 8. Then we do a channel-wise Max Pooling to obtain the value image with shape [128, 1, 8, 8]. Finally we stack this value image with reward image for a new VI iteration. 
+- **Q: ** What is exactly transition model, and how to obtain value image by VI-module from reward image ?
+    - **A: ** Let us assume batch size is 128 under 8x8 grid world. Once we obtain the reward image with shape [128, 1, 8, 8], we do convolutional layer for q layers in VI module. The [3, 3] filter represents the transition probabilities. There is a set of 10 filters, each for generating a feature map in q layers. Each feature map corresponds to an "action". Note that this is larger than real available actions which is only 8. Then we do a channel-wise Max Pooling to obtain the value image with shape [128, 1, 8, 8]. Finally we stack this value image with reward image for a new VI iteration. 
                     
                     
 
