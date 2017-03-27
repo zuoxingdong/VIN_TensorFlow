@@ -80,7 +80,7 @@ python run.py --datafile data/gridworld_28x28.npz --imsize 28 --lr 0.003 --epoch
 Test Accuracy | 8x8 | 16x16 | 28x28
 -- | -- | -- | --
 TensorFlow | 99.03% | 90.2% | 82%
-[PyTorch](https://github.com/zuoxingdong/VIN_PyTorch_Visdom) | 99.16% | 92.44% | 92.44% 
+[PyTorch](https://github.com/zuoxingdong/VIN_PyTorch_Visdom) | 99.16% | 92.44% | 88.20% 
 
 
 ### Speed with GPU
