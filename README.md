@@ -15,9 +15,9 @@ This is an implementation of Value Iteration Networks (VIN) in TensorFlow to rep
 
  | Grid world | Reward Image | Value Images
 -- | -- | --
-8x8 | ![imgs8x8_grid](imgs/grid_8x8.jpeg "1") |  ![imgs8x8_reward](imgs/reward_8x8.png) | ![imgs8x8_reward](imgs/value_function_8x8.gif)
-16x16 | ![imgs16x16_grid](imgs/grid_16x16.jpeg "1") |  ![imgs16x16_reward](imgs/reward_16x16.png) | ![imgs16x16_reward](imgs/value_function_16x16.gif)
-28x28 | ![imgs28x28_grid](imgs/grid_28x28.jpeg "1") |  ![imgs28x28_reward](imgs/reward_28x28.png) | ![imgs28x28_reward](imgs/value_function_28x28.gif)
+8x8 | ![imgs8x8_grid](imgs/grid_8x8.jpeg) |  ![imgs8x8_reward](imgs/reward_8x8.png) | ![imgs8x8_value](imgs/value_function_8x8.gif)
+16x16 | ![imgs16x16_grid](imgs/grid_16x16.jpeg) |  ![imgs16x16_reward](imgs/reward_16x16.png) | ![imgs16x16_value](imgs/value_function_16x16.gif)
+28x28 | ![imgs28x28_grid](imgs/grid_28x28.jpeg) |  ![imgs28x28_reward](imgs/reward_28x28.png) | ![imgs28x28_value](imgs/value_function_28x28.gif)
 
 
 ## Dependencies
